@@ -1,12 +1,12 @@
 pipeline {
     agent any
+    def code
     stages {
-           stage('Load') {
-           code = load 'example.groovy'
-           }
-           stage('Execute') {
-          code.example1()
-          }
+        stage('Hello') {
+            code = load 'example.groovy'
+        }
+        stage("Execute"){
+           code.example1() 
         }
     }
 }
