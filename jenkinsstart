@@ -1,6 +1,6 @@
 def code
 
-node {
+node (any) {
   stage('Load') {
     code = load 'example.groovy'
   }
